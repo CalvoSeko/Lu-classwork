@@ -1,7 +1,7 @@
 import random
-rounds=int(input("How many rounds do you want to go? ")) ### SRC - Okay, but I wanted an Yes/No answer...
+play = input("Do you want to play? (y/n)" )### SRC - Okay, but I wanted an Yes/No answer...
 count=0
-while count!=rounds: ### SRC - If you know how many rounds there are use a for loop.
+while play == "y": ### SRC - If you know how many rounds there are use a for loop.
     print("0 rock, 1 paper, 2 scissors")
     print("guess:", end=" ")
     guess = int(input())
@@ -15,4 +15,5 @@ while count!=rounds: ### SRC - If you know how many rounds there are use a for l
     count+=1
     print(result)
     print()
+    play = input("Do you want to play? (y/n)")
 #end while
